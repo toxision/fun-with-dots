@@ -1,0 +1,45 @@
+/**
+ * ROFI Color theme
+ * NAME: toxmenu.rasi
+ * DESCRIPTION: This is a vertical, modified prompt, based on a theme from Derek Taylor (distrotube.com)
+ * (editing) AUTHOR: toxision (https://mastodon.social/@toxision)
+ */
+
+* {
+    background-color:           #00315F;
+    border-color:               #00315F;
+    text-color:                 #bbc2cf;
+    height:                     24px;
+    font:                       "SauceCodePro Nerd Font Mono 11";
+    selected-normal-background: #ae3f3e;
+    selected-normal-foreground: #000000;
+}
+#window {
+    anchor: west;
+    location: west;
+    width: 350px;
+    height: 650px;
+    padding: 0px;
+    children: [ vertbox ];
+}
+#vertbox {
+    orientation: horizontal;
+    children: [ entry, listview ];
+}
+
+#listview {
+    layout: vertical;
+    lines: 100;
+}
+#entry {
+    padding: 3px;
+    expand: false;
+    width: 70px;
+}
+#element {
+    padding: 2px 8px;
+}
+#element selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
