@@ -1,0 +1,17 @@
+{
+    "autosu": true,
+    "backup": false,
+    "colorscheme": "toxula-tc",
+    "divchars": "║-",
+    "eofnewline": false,
+    "fastdirty": true,
+    "pluginchannels": [
+        "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
+    ],
+    "pluginrepos": [],
+    "savehistory": false,
+    "scrollbar": true,
+    "softwrap": true,
+    "statusformatl": "$(modified)file: $(filename) $(status.paste) ║ type: $(opt:filetype) ║ enc: $(opt:encoding)",
+    "statusformatr": "pos: $(line),$(col) "
+}
